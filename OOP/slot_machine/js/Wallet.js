@@ -7,6 +7,7 @@ class Wallet {
 			return false;
 		};
 		this.changeWalletValue = (type = '+', value) => {
+			console.log(value);
 			if (typeof value === 'number' && !isNaN(value)) {
 				if (type === '+') {
 					return (_money += value);
@@ -16,7 +17,6 @@ class Wallet {
 					throw new Error('Invalid operation type');
 				}
 			} else {
-				console.log(typeof value);
 				throw new Error('Invalid number');
 			}
 		};

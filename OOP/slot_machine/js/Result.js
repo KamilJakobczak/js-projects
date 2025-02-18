@@ -8,7 +8,7 @@ class Result {
 		const b = draw[1];
 		const c = draw[2];
 		if (
-			(a === b && a === c) ||
+			(a === b && b === c) ||
 			(a !== b && b !== c && a !== c)
 		) {
 			return true;
