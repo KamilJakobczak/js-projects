@@ -10,17 +10,18 @@ function deleteNote(key) {
 }
 function createNote(noteKey, noteText) {
   const div = document.createElement('div');
+  div.classList.add('note');
   div.id = 'id' + noteKey;
   div.textContent = noteText;
 
   const button = document.createElement('button');
+  button.classList.add('btn-note-delete');
   button.innerHTML = 'Delete';
   button.onclick = () => deleteNote(noteKey);
 
   div.appendChild(button);
   document.querySelector('.notes').appendChild(div);
 }
-function loadNotes() {}
 
 function init() {
   Object.keys(localStorage).forEach((key) => {
