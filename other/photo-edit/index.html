@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Projekt 2 - Filtrowanie obrazów i scroller</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <button class="btn-scroller">Przejdż do sekcji fajnej</button>
+  <div class="range-bars">
+    <label>Jasność
+      <input type="range" id="brightness-bar" class="bar" min="0" max="200" value="100">
+    </label>
+    <label>Kontrast
+      <input type="range" id="contrast-bar" class="bar" min="0" max="200" value="100">
+    </label>
+    <label>Nasycenie
+      <input type="range" id="saturation-bar" class="bar" min="0" max="200" value="100">
+    </label>
+    <label>Odcień
+      <input type="range" id="hue-bar" class="bar" min="0" max="360" value="0">
+    </label>
+    <label>Rozmycie
+      <input type="range" id="blur-bar" class="bar" min="0" max="10" value="0">
+    </label>
+  </div>
+  <img src="image.png" alt="Wesoły informatyk" id="example-image" class="example-image">
+  <section class="example-section">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia aut, aperiam
+    exercitationem voluptates cupiditate rerum inventore similique ea quis est repudiandae, sunt eos provident ex harum,
+    quisquam quia? Recusandae, quod!</section>
+  <script src="index.js"></script>
+</body>
+
+</html>

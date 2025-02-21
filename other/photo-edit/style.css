@@ -1,0 +1,44 @@
+:root {
+  --brightness: 100%;
+  --contrast: 100%;
+  --saturation: 100%;
+  --hue: 0deg;
+  --blur: 0px;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: arial;
+  font-size: 2rem;
+}
+
+.btn-scroller {
+  width: 80%;
+  display: block;
+  margin: 20px auto;
+}
+
+.range-bars,
+.example-image {
+  width: 40%;
+  padding: 20px;
+}
+
+.bar {
+  display: block;
+  width: 90%;
+  margin: 20px auto;
+}
+
+.example-image {
+  filter:
+    brightness(var(--brightness)) contrast(var(--contrast)) saturate(var(--saturation)) hue-rotate(var(--hue)) blur(var(--blur));
+}
+
+.example-section {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  height: 100vh;
+}
