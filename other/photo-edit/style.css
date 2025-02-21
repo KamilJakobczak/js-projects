@@ -35,10 +35,3 @@ body {
   filter:
     brightness(var(--brightness)) contrast(var(--contrast)) saturate(var(--saturation)) hue-rotate(var(--hue)) blur(var(--blur));
 }
-
-.example-section {
-  width: 100%;
-  background-color: #000;
-  color: #fff;
-  height: 100vh;
-}
