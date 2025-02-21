@@ -3,7 +3,6 @@ const contrastBar = document.getElementById('contrast-bar');
 const saturationBar = document.getElementById('saturation-bar');
 const hueBar = document.getElementById('hue-bar');
 const blurBar = document.getElementById('blur-bar');
-const image = document.getElementById('image');
 const root = document.documentElement;
 
 const updateFilters = () => {
